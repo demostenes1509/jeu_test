@@ -14,7 +14,7 @@ npm run test
 
 Console output will be this:
 
-![Test Output]((https://github.com/demostenes1509/jeu_test/blob/main/test/test.jpg))
+![Test Output](https://github.com/demostenes1509/jeu_test/blob/main/test/test.jpg)
 
 ## Run Test Coverage
 
