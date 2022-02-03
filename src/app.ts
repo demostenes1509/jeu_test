@@ -1,10 +1,13 @@
 import * as readline from 'readline';
 import * as fs from 'fs';
 
+/*
+loadMapPrefixWords load prefixes/words in memory
+*/
 export const loadMapPrefixWords = async (): Promise<Map<string, Array<string>>> => {
 
 	// Open input file
-	const fileStream: fs.ReadStream = fs.createReadStream('jeu_short_list.txt');
+	const fileStream: fs.ReadStream = fs.createReadStream('jeulist.txt');
 
 	// Create a line reader
 	const lineIterator: readline.Interface = readline.createInterface({
@@ -40,6 +43,10 @@ export const loadMapPrefixWords = async (): Promise<Map<string, Array<string>>> 
 	return mapPrefixWords
 }
 
+
+/*
+getResults Executes a search on map 
+*/
 export const getResults = (mapWithPrefixesAndWords: Map<string, Array<string>>, keyToSearch: string): Array<string> => {
 	if (!keyToSearch || keyToSearch.length === 0) {
 		return []
