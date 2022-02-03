@@ -14,7 +14,7 @@ npm run test
 
 Console output will be this:
 
-![test](/test/test.png)
+![Test Output](../../test/test.png)
 
 ## Run Test Coverage
 
